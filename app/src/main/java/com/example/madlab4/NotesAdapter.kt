@@ -38,7 +38,10 @@ class NotesAdapter(private val notes: List<Note>, private val context: Context) 
         val titleTextView: TextView = itemView.findViewById(R.id.titleTextView)
         val contentTextView: TextView = itemView.findViewById(R.id.contentTextView)
         val updateButton: ImageView = itemView.findViewById(R.id.updateButton)
+        val deleteButton:ImageView=itemView.findViewById(R.id.deleteButton)
     }
+
+    
 
     fun refreshData(newNotes: List<Note>) {
      var notes = newNotes
