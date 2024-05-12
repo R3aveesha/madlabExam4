@@ -53,4 +53,8 @@ class NotesDatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE
         return notesList
     }
 
+    fun getNoteByID(noteId: Int): Any {
+
+    }
+
 }
