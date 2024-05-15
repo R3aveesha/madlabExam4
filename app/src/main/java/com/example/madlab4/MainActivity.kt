@@ -1,10 +1,10 @@
 package com.example.madlab4
 
-import NotesAdapter
 import NotesDatabaseHelper
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.madlab4.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -21,9 +21,8 @@ class MainActivity : AppCompatActivity() {
         db=NotesDatabaseHelper(this)
         notesAdapter=NotesAdapter(db.getAllnotes(),this)
 
-        //notesrecyclerview
-
-
+        binding.notesRecyclerView.layoutManager=LinearLayoutManager(this)
+        binding.notesRecyclerView.adapter=notesAdapter
 
 
         binding.addButton.setOnClickListener{
@@ -36,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         notesAdapter.refreshData(db.getAllnotes())
     }
+
 
 }
 

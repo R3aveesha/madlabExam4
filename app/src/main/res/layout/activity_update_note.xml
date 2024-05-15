@@ -6,15 +6,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".ADDnoteActivity">
+    tools:context=".UpdateNoteActivity">
 
     <TextView
-        android:id="@+id/editnoteHeading"
+        android:id="@+id/editNoteHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
-        android:text="edit Note."
+        android:text="Edit Note."
         android:textColor="@color/purple"
         android:textSize="24sp" />
 
@@ -22,8 +22,8 @@
         android:id="@+id/updateSaveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/baseline_done_24"
-        android:layout_alignTop="@+id/editnoteHeading"
+        android:src="@drawable/baseline_add_task_24"
+        android:layout_alignTop="@+id/editNoteHeading"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="6dp"
         />
@@ -35,13 +35,12 @@
         android:gravity="top"
         android:padding="12dp"
         android:textSize="20sp"
-        android:layout_below="@id/editnoteHeading"
+        android:layout_below="@id/editNoteHeading"
         android:background="@drawable/purple_border"
         android:layout_marginTop="160dp"
         android:maxLines="1"
         />
     <EditText
-        android:id="@id/updateContentEditText"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:hint="enter the description"
